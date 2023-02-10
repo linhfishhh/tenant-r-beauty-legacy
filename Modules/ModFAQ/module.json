@@ -1,0 +1,17 @@
+{
+    "name": "ModFAQ",
+    "alias": "modfaq",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "theme": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\ModFAQ\\Providers\\ModFAQServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

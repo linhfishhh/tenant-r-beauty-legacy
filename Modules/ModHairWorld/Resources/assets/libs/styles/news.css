@@ -1,0 +1,242 @@
+.color-list
+{
+	color: #222222;
+	color: #FF5C39;
+	color: #E6E6E6;
+	color: #808080;
+	color: #969696;
+}
+.news-page-header
+{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.news-page-header .title
+{
+	font-size: 27px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.news-page-header .date
+{
+	font-style: italic;
+	color: #969696;
+}
+.news-page-content-1 .main-content
+{
+	padding: 50px;
+	background: #E6E6E6;
+	width: 50%;
+	height: calc(395px + 175px);
+}
+.news-page-content-1 .news-gallery
+{
+	margin-top: -512px;
+	margin-left: -40px;
+	margin-right: -40px;
+}
+.news-page-content-1 .news-gallery .item-p
+{
+	height: calc(395px + 125px);
+}
+.news-page-content-1 .main-content .content
+{
+	max-height: 395px;
+	font-size: 15px;
+	overflow: hidden;
+}
+.news-page-content-1 .main-content .wrapper
+{
+	margin-right: 175px;
+}
+.book-button
+{
+	text-align: center;
+	margin-top: 30px;
+}
+.book-button a
+{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 17px;
+	font-weight: bold;
+	color: white;
+	background: #FF5C39;
+	text-decoration: none;
+	/*+border-radius: 5px;*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	/*+box-shadow: 1px 1px 10px rgba(255, 92, 57, 0.761);*/
+	-moz-box-shadow: 1px 1px 10px rgba(255, 92, 57, 0.761);
+	-webkit-box-shadow: 1px 1px 10px rgba(255, 92, 57, 0.761);
+	box-shadow: 1px 1px 10px rgba(255, 92, 57, 0.761);
+}
+.news-page-content-2 .main-img img
+{
+	width: 100%;
+}
+.news-page-content-2 .main-img
+{
+	margin-left: 100px;
+	margin-bottom: -250px;
+	height: 550px;
+	background: center / cover;
+	position: relative;
+}
+.news-page-content-2 .main-content
+{
+	background: #E6E6E6;
+	margin-right: 100px;
+}
+.news-page-content-2 .main-content .wrapper
+{
+	padding: 300px 100px 100px;
+	margin-right: 350px;
+}
+.news-page-content-2 .main-content .content
+{
+	height: 145px;
+	overflow: hidden;
+	font-size: 15px;
+}
+.news-page-content-2 .news-step-wrapper
+{
+	margin-left: 100px;
+	margin-top: -245px;
+	position: relative;
+	overflow: hidden;
+}
+.news-page-content-2 .news-steps
+{
+	margin-left: -100px;
+	margin-right: -100px;
+}
+.news-page-content-2 .news-steps .img img
+{
+	width: 100%;
+}
+.news-page-content-2 .news-steps .content
+{
+	margin-left: 30px;
+	margin-right: 30px;
+	background: white;
+	position: relative;
+	margin-top: -100px;
+}
+.news-page-content-2 .news-steps .content .content-wrapper
+{
+	padding: 30px;
+}
+.news-page-content-2 .news-steps .item .title
+{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	position: relative;
+	margin-top: -70px;
+}
+.news-page-content-2 .news-steps .item .text
+{
+	font-size: 14px;
+	line-height: 20px;
+}
+.news-page-content-2 .news-steps .item .number
+{
+	font-size: 100px;
+	font-weight: bold;
+	color: #E6E6E6;
+}
+.news-page-content-2 .news-steps .item.item-p
+{
+	height: 245px;
+}
+.news-page-content-2 .news-steps .book-button
+{
+	margin: 0 50px;
+}
+.news-page-content-3 .content
+{
+	font-size: 14px;
+}
+.news-page-content-3 .content img
+{
+	max-width: 100% !important;
+	height: auto;
+}
+.main-img-3
+{
+	height: 40vw;
+	max-height: 400px;
+	background: center / cover;
+	margin-bottom: 30px;
+}
+@media all and (max-width: 1199px)
+{
+}
+@media all and (max-width: 991px)
+{
+	.news-page-content-1 .news-gallery
+	{
+		margin-top: 30px;
+	}
+	.news-page-content-1 .news-gallery .item-p
+	{
+		display: none;
+	}
+	.news-page-content-1 .main-content
+	{
+		padding: 30px;
+		background: #E6E6E6;
+		width: auto;
+		height: auto;
+	}
+	.news-page-content-1 .main-content .wrapper
+	{
+		margin-right: 0;
+	}
+	.news-page-content-2 .main-img
+	{
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+	.news-page-content-2 .main-content
+	{
+		background: #E6E6E6;
+		margin-right: 0;
+	}
+	.news-page-content-2 .main-content .wrapper
+	{
+		padding: 30px;
+		margin-right: 0;
+	}
+	.news-page-content-2 .news-step-wrapper
+	{
+		margin-left: 0;
+		margin-top: 50px;
+		position: relative;
+	}
+	.news-page-content-2 .news-steps .item.item-p
+	{
+		display: none;
+	}
+	.news-page-content-2 .news-steps .content
+	{
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-top: -100px;
+	}
+	.news-page-content-2 .news-steps .content .content-wrapper
+	{
+		padding: 15px;
+	}
+}
+@media all and (max-width: 768px)
+{
+}
+@media all and (max-width: 575px)
+{
+}

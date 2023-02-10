@@ -1,0 +1,25 @@
+{
+    "name": "Webart/modfaq",
+    "description": "",
+    "authors": [
+        {
+            "name": "Webart Team",
+            "email": "tmtrangtv86@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ModFAQ\\Providers\\ModFAQServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ModFAQ\\": ""
+        }
+    }
+}

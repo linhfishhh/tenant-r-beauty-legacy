@@ -1,0 +1,221 @@
+.cart-date-time
+{
+	border: 1px solid #E6E6E6;
+	/*+border-radius: 3px;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 30px;
+}
+.cart-date-time .cart-date
+{
+	padding: 15px 0;
+	border-bottom: 1px solid #E6E6E6;
+}
+.cart-date-time .cart-date .datepicker
+{
+	width: 100%;
+}
+.cart-date-time .cart-date .datepicker TABLE
+{
+	width: 100%;
+}
+.cart-date-time .cart-time
+{
+	padding: 20px;
+}
+.cart-date-time TH
+{
+	font-weight: 400;
+}
+.cart-date-time TABLE TD
+{
+	font-size: 14px;
+}
+.cart-date-time .time-message
+{
+	text-align: center;
+	padding: 50px 0;
+	margin: 0 auto;
+	max-width: 250px;
+	font-size: 13px;
+	color: #808080;
+}
+.cart-date-time .time-message IMG
+{
+	margin-bottom: 30px;
+}
+.cart-date-time .cart-time.date-not-select > :not(.not-select-date)
+{
+	display: none;
+}
+.cart-date-time .cart-time.no-time-aval > :not(.not-aval)
+{
+	display: none;
+}
+.cart-date-time .cart-time.allow-select-time > :not(.time-list)
+{
+	display: none;
+}
+.cart-date-time .time-list .item
+{
+	margin-bottom: 15px;
+}
+.cart-date-time .time-list .item .time
+{
+	font-size: 14px;
+	line-height: 25px;
+}
+.order-info
+{
+	border: 1px solid #E6E6E6;
+	/*+border-radius: 3px;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+.order-detail
+{
+	padding: 15px 20px;
+}
+.order-detail .salon-name
+{
+	font-size: 17px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	font-weight: 500;
+}
+.order-detail .detail
+{
+	padding: 30px 0;
+	border-top: 1px solid #E6E6E6;
+}
+.order-detail .detail:first-child
+{
+	padding-top: 0;
+	border: none;
+}
+.order-detail .detail .title
+{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.order-detail .detail .time
+{
+	font-size: 13px;
+	vertical-align: middle;
+	margin-right: 15px;
+	color: #969696;
+}
+.order-detail .detail .input
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 80px;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	border: 1px solid #E6E6E6;
+	/*+border-radius: 2px;*/
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+}
+.order-detail .detail .input INPUT
+{
+	width: 30px;
+	text-align: center;
+	border: none;
+	font-size: 13px;
+	height: 22px;
+}
+.order-detail .detail .input .sub, .order-detail .detail .input .add
+{
+	position: absolute;
+	height: 22px;
+	width: 25px;
+	top: 0;
+	color: #FF5C39;
+	cursor: pointer;
+	font-weight: 500;
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently
+	                                  supported by Chrome and Opera */
+}
+.order-detail .detail .input .add
+{
+	right: 0;
+}
+.order-detail .detail .price-delete
+{
+	text-align: right;
+	margin-top: 5px;
+}
+.order-detail .detail .price
+{
+	margin-right: 10px;
+	color: #FF5C39;
+	font-weight: 500;
+}
+.order-detail .detail .delete
+{
+	cursor: pointer;
+	color: #969696;
+}
+.order-detail .detail .delete:hover
+{
+	color: #FF5C39;
+}
+.order-info .order-action
+{
+	padding: 20px;
+	border-top: 1px solid #E6E6E6;
+}
+.order-info .add-more A
+{
+	text-decoration: none;
+	color: #222222;
+	font-size: 14px;
+}
+.order-info .add-more A:hover
+{
+	color: #FF5C39;
+}
+.order-info .add-more A I
+{
+	color: #FF5C39;
+	font-size: 20px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.order-info .order-action .submit
+{
+	margin-top: 50px;
+}
+.order-info .order-action .submit BUTTON
+{
+	width: 100%;
+	border: none;
+	height: 50px;
+	color: white;
+	background: #FF5C39;
+	/*+border-radius: 2px;*/
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+}

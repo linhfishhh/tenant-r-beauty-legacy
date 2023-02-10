@@ -1,0 +1,1 @@
+@include('modhairworld::backend.pages.includes.salon_index', ['admin_mode' =>1])

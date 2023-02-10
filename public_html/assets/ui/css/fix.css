@@ -1,0 +1,104 @@
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    -webkit-transform: translate3d(0, -50px, 0);
+    -ms-transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -50px, 0);
+
+    -webkit-transition: -webkit-transform .5s ease-out;
+    -ms-transition: -webkit-transform .5s ease-out;
+    transition: transform .5s ease-out;
+}
+
+.pace.pace-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.pace .pace-progress {
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 10px;
+    background: #29d;
+
+    pointer-events: none;
+}
+
+body > :not(.pace),body:before,body:after {
+}
+
+body:not(.pace-done) > :not(.pace),body:not(.pace-done):before,body:not(.pace-done):after {
+    opacity:0
+}
+
+.editable-tag-link{
+    border-bottom: 1px dashed #1E88E5;
+}
+
+.combodate .form-control {
+    display: inline-block;
+    width: 80px!important;
+    min-width: auto;
+}
+
+.select2-choice-plant{
+    color: #fff;
+    border-radius: 3px;
+    cursor: default;
+    float: left;
+    margin-right: 2px;
+    margin-top: 2px;
+    padding: 7px 12px;
+}
+
+.select2-choice-plant .select2-selection__choice__remove {
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    margin-top: 3px;
+    line-height: 1;
+    margin-left: 7px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+.dataTable tbody > tr.selected, .dataTable tbody > tr > .selected {
+    background-color: rgba(38, 166, 154, 0.08);
+}
+
+div.mce-fullscreen {
+    z-index: 1050;
+}
+.sortable-placeholder-fix{
+    margin-bottom: 20px;
+}
+.sortable-placeholder-fix:before {
+    content: '';
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    position: absolute;
+    left: 13px;
+    right: 13px;
+    top: 0;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.sp-container{
+    z-index: 999999999;
+}

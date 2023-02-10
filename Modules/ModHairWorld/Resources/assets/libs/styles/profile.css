@@ -1,0 +1,245 @@
+.color-list
+{
+	color: #222222;
+	color: #FF5C39;
+	color: #E6E6E6;
+	color: #808080;
+	color: #969696;
+}
+.main-content
+{
+	margin: 30px 0;
+}
+.left-sec .avatar IMG
+{
+	width: 100%;
+}
+.left-sec .avatar
+{
+	margin-bottom: 30px;
+}
+.left-sec .block
+{
+	margin-bottom: 30px;
+	border: 1px solid #E6E6E6;
+	/*+border-radius: 2px;*/
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+}
+.left-sec .block .block-title
+{
+	padding: 15px 20px;
+	border-bottom: 1px solid #E6E6E6;
+	background: #F1F1F1;
+	font-weight: 500;
+}
+.left-sec .block .block-content
+{
+	padding: 20px;
+	font-size: 14px;
+}
+.left-sec .block.phone-numbers UL
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 15px;
+}
+.left-sec .block.phone-numbers UL LI
+{
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+	position: relative;
+}
+.left-sec .block.phone-numbers UL LI .default
+{
+	display: none;
+}
+.left-sec .block.phone-numbers UL LI A:hover
+{
+	color: #FF5C39;
+}
+.left-sec .block.phone-numbers UL LI.default .delete
+{
+	display: none;
+}
+.left-sec .block.phone-numbers UL LI.default
+{
+	color: ;
+}
+.left-sec .block.phone-numbers UL LI.default .default
+{
+	display: block;
+}
+.left-sec .block.phone-numbers .default.action
+{
+	color: #29B473;
+}
+.left-sec .block.phone-numbers .delete.action
+{
+	color: #FF5C39;
+}
+.left-sec .block.phone-numbers UL LI .action
+{
+	position: absolute;
+	height: 30px;
+	line-height: 30px;
+	top: 0;
+	right: 0;
+	font-size: 20px;
+}
+.left-sec .block.phone-numbers .add-more A
+{
+	color: #FF5C39;
+}
+.right-sec .welcome
+{
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.right-sec .address-join-date I
+{
+	font-size: 5px;
+	vertical-align: middle;
+	margin: 0 10px;
+}
+.right-sec .address-join-date
+{
+	font-size: 14px;
+	color: #808080;
+	margin-bottom: 10px;
+}
+.right-sec .edit-links
+{
+	margin-bottom: 50px;
+}
+.right-sec .edit-links A
+{
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right: 30px;
+}
+.right-sec .edit-links .edit-password-link
+{
+	color: #FF5C39;
+}
+/**/
+.right-sec .info-blocks
+{
+	margin-bottom: 50px;
+}
+.right-sec .info-block
+{
+	text-align: center;
+	background: #E6E6E6;
+	width: 100%;
+	height: 220px;
+	text-decoration: none;
+	color: #222222;
+	/*+border-radius: 2px;*/
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+	margin-bottom: 15px;
+}
+.right-sec .info-block > .wrapper
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+.right-sec .info-block .block-title
+{
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.right-sec .info-block .block-icon
+{
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+.right-sec .info-block .block-number
+{
+	font-size: 45px;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+.right-sec .info-block.waiting
+{
+	background: #FF5C39;
+	color: white;
+}
+.right-sec .coupons
+{
+	margin-bottom: 30px;
+}
+.right-sec .coupons TABLE
+{
+	width: 100%;
+	border: 1px solid #E6E6E6;
+}
+.right-sec .coupons TABLE TD
+{
+	border: 1px solid #E6E6E6;
+	padding: 30px 15px;
+}
+.right-sec .coupons .block-title
+{
+	font-size: 20px;
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+.right-sec .coupons TD.name
+{
+	color: #FF5C39;
+	font-weight: 500;
+}
+.right-sec .coupons TD.desc
+{
+	font-size: 14px;
+	color: #808080;
+	text-align: center;
+}
+.right-sec .coupons TD.date
+{
+	font-size: 15px;
+}
+.left-sec .block.basic-info .info
+{
+	margin-bottom: 10px;
+}
+.left-sec .block.basic-info .info .lbl
+{
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.left-sec .block.basic-info .info .val
+{
+	color: #808080;
+	font-size: 14px;
+}
+@media all and (max-width: 575px)
+{
+	.right-sec .welcome
+	{
+		text-align: center;
+	}
+	.right-sec .address-join-date SPAN
+	{
+		display: block;
+		text-align: center;
+	}
+	.right-sec .address-join-date I
+	{
+		display: none;
+	}
+	.right-sec .edit-links
+	{
+		text-align: center;
+	}
+}

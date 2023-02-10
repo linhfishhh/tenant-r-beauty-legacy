@@ -1,0 +1,37 @@
+#help-list .item
+{
+	border-bottom: 1px solid #E6E6E6;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+#help-list .item:last-child
+{
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border: none;
+}
+#help-list .item .question > DIV
+{
+	cursor: pointer;
+	position: relative;
+	font-weight: 500;
+	padding-right: 30px;
+}
+#help-list .item .question > DIV:after
+{
+	content: "\f077";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-family: FontAwesome;
+	color: #969696;
+}
+#help-list .item .question > DIV.collapsed:after
+{
+	content: "\f078";
+}
+#help-list .answer
+{
+	padding-top: 30px;
+}

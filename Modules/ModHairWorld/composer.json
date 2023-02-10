@@ -1,0 +1,25 @@
+{
+    "name": "Webart/modhairworld",
+    "description": "",
+    "authors": [
+        {
+            "name": "Webart Team",
+            "email": "tmtrangtv86@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ModHairWorld\\Providers\\ModHairWorldServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ModHairWorld\\": ""
+        }
+    }
+}

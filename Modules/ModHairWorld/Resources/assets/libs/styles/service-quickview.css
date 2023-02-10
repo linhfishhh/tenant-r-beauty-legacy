@@ -1,0 +1,237 @@
+#modal-salon-service-detail .modal-body
+{
+	padding: 0;
+}
+#modal-salon-service-detail .service-detail-wrapper
+{
+	max-height: calc(100vh - 12rem);
+	overflow-x: hidden;
+}
+#modal-salon-service-detail .booking-btn
+{
+	font-size: 12px;
+	display: inline-block;
+	background: #FF5C39;
+	/*+border-radius: 3px;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	padding: 0 10px;
+	color: white;
+	vertical-align: middle;
+	height: 25px;
+	line-height: 25px;
+}
+#modal-salon-service-detail .modal-title
+{
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	height: 25px;
+	line-height: 25px;
+	margin-right: 5px;
+}
+#modal-salon-service-detail .modal-footer .wa-book
+{
+	background: #FF5C39 !important;
+	border-color: #FF5C39 !important;
+	color: white !important;
+}
+#modal-salon-service-detail .modal-footer .wa-book.loading
+{
+	pointer-events: none;
+	/*+opacity: 0.5;*/
+	-filter: alpha(opacity=50);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+#modal-salon-service-detail .modal-header .close
+{
+	font-size: 16px;
+	font-weight: 400;
+	height: 55px;
+	color: #FF5C39;
+	/*+opacity: 1;*/
+	-filter: alpha(opacity=100);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+#modal-salon-service-detail .service-detail-inner
+{
+	padding: 20px 50px;
+	min-height: 250px;
+	position: relative;
+}
+#modal-salon-service-detail .service-logo-list-title
+{
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+#modal-salon-service-detail .service-logo-list
+{
+}
+#modal-salon-service-detail .service-logo-list IMG
+{
+	max-width: 100%;
+}
+#modal-salon-service-detail .service-logo-list .logo
+{
+	line-height: 64px;
+	margin-top: 10px;
+	text-align: center;
+}
+@-moz-keyframes spin
+{
+	from
+	{
+		-moz-transform: rotate(0deg);
+	}
+	to
+	{
+		-moz-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spin
+{
+	from
+	{
+		-webkit-transform: rotate(0deg);
+	}
+	to
+	{
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes spin
+{
+	from
+	{
+		/*+transform: rotate(0deg);*/
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to
+	{
+		/*+transform: rotate(360deg);*/
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+#modal-salon-service-detail.loading .service-detail-inner:before
+{
+	content: "\f110";
+	text-align: center;
+	display: block;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	font-family: FontAwesome;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	margin-top: -25px;
+	margin-left: -25px;
+	font-size: 25px;
+	/*+animation: spin 1s linear 0s infinite normal running;*/
+	-webkit-animation: spin 1s linear 0s infinite normal running;
+	-moz-animation: spin 1s linear 0s infinite normal running;
+	-o-animation: spin 1s linear 0s infinite normal running;
+	animation: spin 1s linear 0s infinite normal running;
+}
+#modal-salon-service-detail.loading .service-detail-inner
+{
+	pointer-events: none;
+}
+#modal-salon-service-detail .service-detail-header
+{
+	margin-bottom: 30px;
+}
+#modal-salon-service-detail .service-detail-header .service-title
+{
+	font-size: 35px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+#modal-salon-service-detail .service-detail-header .rating-block > DIV
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+#modal-salon-service-detail .service-detail-header .rating-block .stars I
+{
+	font-size: 25px;
+}
+#modal-salon-service-detail .service-detail-header .rating-block .stars
+{
+	margin-bottom: 5px;
+}
+#modal-salon-service-detail .service-detail-header .rating-block .text
+{
+	color: #969696;
+	font-size: 14px;
+}
+#modal-salon-service-detail .service-detail-header .rating-block .write-review-link
+{
+	display: block;
+}
+#modal-salon-service-detail .service-detail-header .rating-block .write-review-link A
+{
+	color: #FF5C39;
+}
+#modal-salon-service-detail .service-detail-header .rating-block .number
+{
+	font-size: 75px;
+	font-weight: 600;
+	margin-right: 10px;
+}
+#modal-salon-service-detail .service-detail-content
+{
+	margin-bottom: 30px;
+}
+#modal-salon-service-detail .service-detail-review .block-title
+{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+#modal-salon-service-detail .service-detail-review .review-list-block
+{
+	margin: 30px 0;
+}
+@media all and (max-width: 575px)
+{
+	#modal-salon-service-detail .modal-dialog
+	{
+		margin: 0;
+	}
+	#modal-salon-service-detail
+	{
+		padding: 0 !important;
+	}
+	#modal-salon-service-detail .service-detail-wrapper
+	{
+		max-height: calc(100vh - 60px);
+	}
+	#modal-salon-service-detail .service-detail-inner
+	{
+		padding: 20px 15px;
+	}
+	#modal-salon-service-detail .service-logo-list-title
+	{
+		margin-top: 15px;
+	}
+	#modal-salon-service-detail .service-logo-list .logo
+	{
+		line-height: 30px;
+	}
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Webart/modcontact",
+    "description": "",
+    "authors": [
+        {
+            "name": "Webart Team",
+            "email": "tmtrangtv86@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ModContact\\Providers\\ModContactServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ModContact\\": ""
+        }
+    }
+}

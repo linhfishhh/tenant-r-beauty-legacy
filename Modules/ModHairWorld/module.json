@@ -1,0 +1,35 @@
+{
+    "name": "ModHairWorld",
+    "alias": "modhairworld",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "theme": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\ModHairWorld\\Providers\\ModHairWorldServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": [],
+    "menu_locations": [
+        {
+            "id": "main",
+            "title": "Menu chính"
+        },
+        {
+            "id": "footer1",
+            "title": "Menu footer 1"
+        },
+        {
+            "id": "footer2",
+            "title": "Menu footer 2"
+        },
+        {
+            "id": "footer3",
+            "title": "Menu footer 3"
+        }
+    ]
+}

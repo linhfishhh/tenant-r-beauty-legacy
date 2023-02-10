@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/all.js"></script>
+
+
+          <script>
+        $(function() {
+            setupLanguages(["bash","javascript"]);
+        });
+      </script>
+      </head>
+
+  <body class="">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+        <img src="images/logo.png" />
+                    <div class="lang-selector">
+                                  <a href="#" data-language-name="bash">bash</a>
+                                  <a href="#" data-language-name="javascript">javascript</a>
+                            </div>
+                            <div class="search">
+              <input type="text" class="search" id="input-search" placeholder="Search">
+            </div>
+            <ul class="search-results"></ul>
+              <div id="toc">
+      </div>
+                    <ul class="toc-footer">
+                                  <li><a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a></li>
+                            </ul>
+            </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+          <!-- START_INFO -->
+<h1>Info</h1>
+<p>Welcome to the generated API reference.
+<a href="http://thegioitoc.vn/_html/docs/collection.json">Get Postman Collection</a></p>
+<!-- END_INFO -->
+<h1>Account</h1>
+<p>Những request này yêu cầu token ở header</p>
+<!-- START_458e02eaae3b771d0d51049892b3dde7 -->
+<h2>Đổi mật khẩu*</h2>
+<p>Đổi mật khẩu đăng nhập hiện tại</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "http://thegioitoc.vn/api/manager/account/change-password" \
+-H "Accept: application/json" \
+    -d "old_password"="sunt" \
+    -d "new_password"="sunt" \
+</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://thegioitoc.vn/api/manager/account/change-password",
+    "method": "POST",
+    "data": {
+        "old_password": "sunt",
+        "new_password": "sunt"
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">"true"</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/manager/account/change-password</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>old_password</td>
+<td>string</td>
+<td>required</td>
+</tr>
+<tr>
+<td>new_password</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>6</code> Must match this regular expression: <code>/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$/</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_458e02eaae3b771d0d51049892b3dde7 -->
+<h1>Authentication</h1>
+<p>Những request này không yêu cầu token ở header</p>
+<!-- START_67882e62fab916565b529e72b8ab499d -->
+<h2>Login</h2>
+<p>Đăng nhập trả về token<br/>
+Tham số <strong>username</strong> có thể là <i>email</i> hoặc <i>số điện thoại</i></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET "http://thegioitoc.vn/api/manager/auth/login" \
+-H "Accept: application/json" \
+    -d "email_phone"="deserunt" \
+    -d "password"="deserunt" \
+</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://thegioitoc.vn/api/manager/auth/login",
+    "method": "GET",
+    "data": {
+        "email_phone": "deserunt",
+        "password": "deserunt"
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJkZDQ0ZDYxOWI5YTZmYjY5N2QwYzJmOGQwYmVhZGExMGE3MWU2ZjM3Y2EyMTEyNjRlZGFkYjYzZmMwMjMzZWYwYWRmZTNlOGVhYzQ0NTM1In0.eyJhdWQiOiIxIiwianRpIjoiMmRkNDRkNjE5YjlhNmZiNjk3ZDBjMmY4ZDBiZWFkYTEwYTcxZTZmMzdjYTIxMTI2NGVkYWRiNjNmYzAyMzNlZjBhZGZlM2U4ZWFjNDQ1MzUiLCJpYXQiOjE1MzQ5NDcxMTMsIm5iZiI6MTUzNDk0NzExMywiZXhwIjoxNTY2NDgzMTEzLCJzdWIiOiI3NyIsInNjb3BlcyI6WyJjdXN0b21lciJdfQ.Tvv5vbxy-rkQrBq2sQFx5nfJT40vPpFJNrIC01k62zy0PQvUJdregoiLFp4tJfPfFvPnYWRb9b3ovXYyGmb-5du5cme0JV1wpjNQYZlpVMni_CfTUVg2JMqP62tylW_oI7nM1WK25xr2FOP1IrzqpLeYqsjwG0VideLgX2imsv-ZcHdi10c90ejPT4uCvnwvrhCR6gY9fPOApjJGhdJ6tJxa-gUP42LH0JdBrfgK45XAEKs_bXbgS5wwnR2b3R8PWX8_pCaxz0fBlna7M7X8BLGHY9kPWBStOfjocEFIJyH20gHSHYKViCgPK-i3gFVA5SA17mGNBUCYJQA3PGiEkVXM6V8td4VLJD-NUxXSvc7vWaESuXv2poE7g2tO90aFiyenXNmIJlGRqaFXLoevodIi78CYjjQMzv-TqUE7CfBsPpzIe32gcoopunecwKsuKNLgT6t5zsAYUp1pKMOA3WYnpJ4iu1x0AVvzckg549pfvVLPJktB5epZf11Araxs7nme9oIiBqwuPDFItlWh3LxtoC7-ajkstQQxFtO6K-dA2DHnEwBJPJbHbTnEhSDJDSdd2baZbF12Zz07tiHMxcB1Jtm7kb_zOWdxcpiNenYPd1R0EOi1aUC-aXa7qEypbj-Tt6LZajAw9eWg-OjASf_QhPHR5vu2-7qsxgUPBJc"</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/manager/auth/login</code></p>
+<p><code>HEAD api/manager/auth/login</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email_phone</td>
+<td>string</td>
+<td>required</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_67882e62fab916565b529e72b8ab499d -->
+<!-- START_a9e71091acc658ab0d9cc7660c60d109 -->
+<h2>Tạo lại mật khẩu</h2>
+<p>Khởi tạo lại mật khẩu sử dụng mã xác thực sms<br/></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET "http://thegioitoc.vn/api/manager/auth/reset-password" \
+-H "Accept: application/json" \
+    -d "email_phone"="quod" \
+    -d "sms_verify_code"="7953095" \
+    -d "new_password"="quod" \
+</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://thegioitoc.vn/api/manager/auth/reset-password",
+    "method": "GET",
+    "data": {
+        "email_phone": "quod",
+        "sms_verify_code": 7953095,
+        "new_password": "quod"
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">"true|false"</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/manager/auth/reset-password</code></p>
+<p><code>HEAD api/manager/auth/reset-password</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email_phone</td>
+<td>string</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>sms_verify_code</td>
+<td>numeric</td>
+<td>required</td>
+<td>Must have a length between <code>100000</code> and <code>999999</code></td>
+</tr>
+<tr>
+<td>new_password</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>6</code> Must match this regular expression: <code>/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$/</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_a9e71091acc658ab0d9cc7660c60d109 -->
+<h1>SMS Verify</h1>
+<p>Những request này không yêu cầu token ở header</p>
+<!-- START_59188d66c6a7e7fc39346bf986024393 -->
+<h2>Yêu cầu mã xác thực mới</h2>
+<p>Yêu cầu mã xác thực gửi qua sms<br/>
+Tham số <strong>username</strong> có thể là <i>email</i> hoặc <i>số điện thoại</i></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET "http://thegioitoc.vn/api/manager/sms-verify/new" \
+-H "Accept: application/json" \
+    -d "email_phone"="omnis" \
+</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://thegioitoc.vn/api/manager/sms-verify/new",
+    "method": "GET",
+    "data": {
+        "email_phone": "omnis"
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">"true"</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/manager/sms-verify/new</code></p>
+<p><code>HEAD api/manager/sms-verify/new</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email_phone</td>
+<td>string</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_59188d66c6a7e7fc39346bf986024393 -->
+<!-- START_1a79494997a53b1a28976cb1d3e20498 -->
+<h2>Kiểm tra mã xác thực</h2>
+<p>Kiểm tra mã xác thực nhận được qua sms</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET "http://thegioitoc.vn/api/manager/sms-verify/check" \
+-H "Accept: application/json" \
+    -d "sms_verify_code"="535863" \
+</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://thegioitoc.vn/api/manager/sms-verify/check",
+    "method": "GET",
+    "data": {
+        "sms_verify_code": 535863
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">"true|false"</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/manager/sms-verify/check</code></p>
+<p><code>HEAD api/manager/sms-verify/check</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sms_verify_code</td>
+<td>numeric</td>
+<td>required</td>
+<td>Must have a length between <code>100000</code> and <code>999999</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_1a79494997a53b1a28976cb1d3e20498 -->
+<h1>Salon</h1>
+<p>Những request này yêu cầu token ở header</p>
+<!-- START_52ddc63efd38ba249d272735cba7d8fb -->
+<h2>Lấy thông tin ngắn gọn*</h2>
+<p>Thông tin ngắn gọn của salon: ảnh đại diện, tên salon</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET "http://thegioitoc.vn/api/manager/salon/short-info" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://thegioitoc.vn/api/manager/salon/short-info",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{<br> "name": "Salon Tấn Can",<br> "avatar": "http:\/\/mysite.com\/xyz.jpg"<br>}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/manager/salon/short-info</code></p>
+<p><code>HEAD api/manager/salon/short-info</code></p>
+<!-- END_52ddc63efd38ba249d272735cba7d8fb -->
+      </div>
+      <div class="dark-box">
+                        <div class="lang-selector">
+                                    <a href="#" data-language-name="bash">bash</a>
+                                    <a href="#" data-language-name="javascript">javascript</a>
+                              </div>
+                </div>
+    </div>
+  </body>
+</html>

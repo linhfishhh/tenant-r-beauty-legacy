@@ -1,0 +1,33 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  image:
+    name: $PLATFORM_DOCKER_REGISTRY_URL/gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  only:
+    - dev
+    - master
+  before_script:
+    - if [ $CI_COMMIT_BRANCH == "dev" ]; then export TAG=dev; elif [ $CI_COMMIT_BRANCH == "master" ]; then export TAG=prod; fi
+  script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"credsStore\":\"ecr-login\"}" > /kaniko/.docker/config.json
+    - /kaniko/executor --context . --dockerfile Dockerfile --destination $PLATFORM_DOCKER_REGISTRY_URL/isalon/legacy:$TAG
+
+deploy:
+  stage: deploy
+  image: $PLATFORM_DOCKER_REGISTRY_URL/dockerhub/alpine/k8s:1.17.5
+  only:
+    - dev
+    - master
+  dependencies: []
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - if [ $CI_COMMIT_BRANCH == "dev" ]; then export TAG=dev; elif [ $CI_COMMIT_BRANCH == "master" ]; then export TAG=prod; fi
+  script:
+    - aws eks --region ap-southeast-1 update-kubeconfig --name raichu_global_eks --kubeconfig kubeconfig
+    - kubectl --kubeconfig kubeconfig -n isl-$TAG rollout restart deployments legacy

@@ -1,0 +1,23 @@
+#payment-page-form .option LABEL
+{
+	display: block;
+}
+#payment-page-form .radio-container
+{
+	height: auto;
+	font-size: 16px;
+}
+#payment-page-form .option
+{
+	margin: 30px 0;
+}
+#payment-page-form .option .desc
+{
+	font-size: 14px;
+	color: #808080;
+}
+#payment-page-form .option IMG
+{
+	width: 100%;
+	margin-top: 15px;
+}

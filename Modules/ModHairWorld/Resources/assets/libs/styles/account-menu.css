@@ -1,0 +1,88 @@
+.main-content
+{
+	margin: 50px 0 30px;
+}
+.account-info
+{
+	margin-bottom: 15px;
+	text-decoration: none !important;
+	color: #222222 !important;
+}
+.account-info .name
+{
+	font-size: 25px;
+	font-weight: 500;
+}
+.account-info .date
+{
+	font-size: 15px;
+	color: #808080;
+}
+.side-menu
+{
+	margin-top: 15px;
+}
+.side-menu UL
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.side-menu UL LI
+{
+	padding: 0 0 0 15px;
+	margin-bottom: 30px;
+}
+.side-menu UL LI I
+{
+	display: inline-block;
+	width: 30px;
+	font-size: 20px;
+}
+.side-menu UL LI A
+{
+	color: #969696;
+	text-decoration: none;
+}
+.side-menu UL LI A:hover, .side-menu UL LI.active A
+{
+	color: #222222;
+}
+.content-box
+{
+	border: 1px solid #E6E6E6;
+	/*+border-radius: 5px;*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.content-box .content-title
+{
+	padding: 15px;
+	border-bottom: 1px solid #E6E6E6;
+	font-weight: 500;
+}
+.content-body
+{
+	padding: 30px 50px 80px;
+}
+#modal-account-address .field INPUT
+{
+	font-size: 16px;
+	border: 1px solid #E7E7E7;
+	height: 40px;
+	/*+border-radius: 3px;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+@media all and (max-width: 768px)
+{
+	.content-body
+	{
+		padding: 30px 15px;
+	}
+}

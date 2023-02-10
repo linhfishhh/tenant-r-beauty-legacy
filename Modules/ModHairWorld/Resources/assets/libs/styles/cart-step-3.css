@@ -1,0 +1,137 @@
+.booking-bill
+{
+	border: 1px solid #E6E6E6;
+	padding: 30px;
+	/*+border-radius: 3px;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+.booking-bill .bill-header
+{
+	padding-bottom: 30px;
+	border-bottom: 4px solid #E6E6E6;
+	padding-left: 15px;
+}
+.booking-bill .bill-header .title
+{
+	font-size: 18px;
+	font-weight: 500;
+}
+.booking-bill .bill-header .id
+{
+	color: #FF5C39;
+	font-size: 17px;
+}
+.booking-bill .bill-info
+{
+	padding: 20px 15px;
+	border-bottom: 4px solid #E6E6E6;
+}
+.booking-bill .bill-info .item
+{
+	margin-top: 15px;
+	font-size: 14px;
+}
+.booking-bill .bill-info .item:first-child
+{
+	margin-top: 0;
+}
+.booking-bill .bill-info .item > DIV
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+.booking-bill .bill-info .item .info
+{
+	width: calc(100% - 30px);
+}
+.booking-bill .bill-info .item .icon
+{
+	font-size: 20px;
+	width: 25px;
+}
+.booking-bill .bill-info .item .title
+{
+	font-weight: 500;
+}
+.booking-bill .bill-info .item .sub
+{
+	color: #969696;
+	font-size: 12px;
+}
+.booking-bill .bill-detail
+{
+	padding: 15px 15px;
+}
+.booking-bill .bill-detail TABLE
+{
+	width: 100%;
+}
+.booking-bill .bill-detail TABLE THEAD TH
+{
+	font-weight: 400;
+	font-size: 14px;
+	color: #969696;
+}
+.booking-bill .bill-detail TABLE THEAD TH:last-child
+{
+	text-align: right;
+}
+.booking-bill .bill-detail TABLE TBODY TD
+{
+	padding: 15px 0;
+	border-bottom: 1px solid #E6E6E6;
+	font-size: 14px;
+}
+.booking-bill .bill-detail TABLE .title
+{
+	font-weight: 500;
+}
+.booking-bill .bill-detail TABLE .quantity
+{
+	color: #969696;
+	font-size: 13px;
+}
+.booking-bill .bill-detail TABLE .price
+{
+	color: #FF5C39;
+	font-weight: 500;
+}
+.booking-bill .bill-detail TABLE .sum .title
+{
+	font-weight: 400;
+	color: #969696;
+}
+.booking-bill .bill-detail TABLE .sum .price
+{
+	color: #222222;
+}
+.booking-bill .bill-detail TABLE TR:last-child TD
+{
+	border: none;
+}
+.booking-bill .link A
+{
+	display: block;
+	background: #FF5C39;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	height: 50px;
+	line-height: 50px;
+	/*+border-radius: 3px;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+.booking-bill .link A:hover
+{
+	/*+opacity: 0.9;*/
+	-filter: alpha(opacity=90);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+}

@@ -1,0 +1,137 @@
+.color-list
+{
+	color: #222222;
+	color: #FF5C39;
+	color: #E6E6E6;
+	color: #808080;
+	color: #969696;
+}
+/**/
+.page-content
+{
+	margin: 50px 0;
+}
+.block-title
+{
+	font-size: 21px;
+	margin-bottom: 50px;
+}
+.page-content .field
+{
+	margin-bottom: 30px;
+}
+.page-content .field INPUT
+{
+	height: 50px;
+	padding: 0 15px;
+}
+.page-content .field INPUT, .page-content .field TEXTAREA
+{
+	width: 100%;
+	border: none;
+	background: #E6E6E6;
+}
+.page-content .field TEXTAREA
+{
+	padding: 15px;
+}
+.page-content .btn-submit BUTTON
+{
+	height: 50px;
+	width: 100%;
+	/*+border-radius: 3px;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	border: none;
+	color: white;
+	background: #FF5C39;
+}
+.page-content .info-block
+{
+	margin-left: 30px;
+}
+.page-content .info-block .hot-line
+{
+	padding: 15px 0;
+	border-top: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
+}
+.page-content .info-block .hot-line .text
+{
+	font-weight: bold;
+	color: #FF5C39;
+}
+.page-content .info-block .contact-item
+{
+	margin-bottom: 30px;
+}
+.page-content .info-block .contact-item .name
+{
+	font-size: 15px;
+	font-weight: 600;
+}
+.page-content .info-block .contact-item .line
+{
+	padding: 15px 0;
+	border-top: 1px solid #E6E6E6;
+	font-size: 14px;
+	line-height: 20px;
+}
+.page-content .info-block .contact-item .line:first-child
+{
+	border: none;
+}
+.page-content .info-block .contact-item .map-link A
+{
+	font-size: 14px;
+	text-decoration: none;
+}
+.page-content .info-block .contact-item .map-link A:hover
+{
+	color: #FF5C39;
+}
+.page-content .field INPUT
+{
+}
+#form-contact .captcha
+{
+	margin-bottom: 30px;
+	position: relative;
+}
+#form-contact .captcha .fa-refresh
+{
+	position: absolute;
+	top: 15px;
+	margin-left: 10px;
+	cursor: pointer;
+	left: 260px;
+}
+#form-contact .captcha INPUT
+{
+	width: 100px;
+	border: none;
+	background: #E6E6E6;
+	height: 45px;
+	padding: 0 15px;
+	vertical-align: middle;
+	text-align: center;
+}
+@media all and (max-width: 1199px)
+{
+}
+@media all and (max-width: 991px)
+{
+}
+@media all and (max-width: 768px)
+{
+	.page-content .info-block
+	{
+		margin-left: 0;
+		margin-top: 50px;
+	}
+}
+@media all and (max-width: 575px)
+{
+}

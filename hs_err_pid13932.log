@@ -1,0 +1,164 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=13932, tid=0x00000000000019f4
+#
+# JRE version:  (8.0_202-b44) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.202-b44 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002712800):  JavaThread "Unknown thread" [_thread_in_vm, id=6644, stack(0x0000000000e40000,0x0000000000f40000)]
+
+Stack: [0x0000000000e40000,0x0000000000f40000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002712800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6644, stack(0x0000000000e40000,0x0000000000f40000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x0000000701400000, size: 3052 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x00000007c0000000
+
+Heap:
+ PSYoungGen      total 57344K, used 983K [0x0000000780700000, 0x0000000784700000, 0x00000007c0000000)
+  eden space 49152K, 2% used [0x0000000780700000,0x00000007807f5c38,0x0000000783700000)
+  from space 8192K, 0% used [0x0000000783f00000,0x0000000783f00000,0x0000000784700000)
+  to   space 8192K, 0% used [0x0000000783700000,0x0000000783700000,0x0000000783f00000)
+ ParOldGen       total 131072K, used 0K [0x0000000701400000, 0x0000000709400000, 0x0000000780700000)
+  object space 131072K, 0% used [0x0000000701400000,0x0000000701400000,0x0000000709400000)
+ Metaspace       used 777K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 74K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000011cd0000,0x00000000122d0000] byte_map_base: 0x000000000e4c6000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000073a69f30
+ Begin Bits: [0x0000000012ad0000, 0x0000000015a80000)
+ End Bits:   [0x0000000015a80000, 0x0000000018a30000)
+
+Polling page: 0x00000000005f0000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000002910000, 0x0000000002b80000, 0x0000000011910000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.025 loading class java/lang/Short
+Event: 0.025 loading class java/lang/Short done
+Event: 0.025 loading class java/lang/Integer
+Event: 0.025 loading class java/lang/Integer done
+Event: 0.025 loading class java/lang/Long
+Event: 0.025 loading class java/lang/Long done
+Event: 0.025 loading class java/lang/NullPointerException
+Event: 0.026 loading class java/lang/NullPointerException done
+Event: 0.026 loading class java/lang/ArithmeticException
+Event: 0.026 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff64a540000 - 0x00007ff64a571000 	C:\Program Files\JetBrains\PhpStorm 2018.2.5\jre64\bin\java.exe
+0x00007ffea9e00000 - 0x00007ffea9fe1000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffea9350000 - 0x00007ffea9401000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffea6fc0000 - 0x00007ffea7233000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffea8f50000 - 0x00007ffea8ff1000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffea9410000 - 0x00007ffea94ae000 	C:\Windows\System32\msvcrt.dll
+0x00007ffea8ef0000 - 0x00007ffea8f4b000 	C:\Windows\System32\sechost.dll
+0x00007ffea9210000 - 0x00007ffea9334000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffea94e0000 - 0x00007ffea9670000 	C:\Windows\System32\USER32.dll
+0x00007ffea64c0000 - 0x00007ffea64e0000 	C:\Windows\System32\win32u.dll
+0x00007ffea91e0000 - 0x00007ffea9208000 	C:\Windows\System32\GDI32.dll
+0x00007ffea6d70000 - 0x00007ffea6f02000 	C:\Windows\System32\gdi32full.dll
+0x00007ffea6420000 - 0x00007ffea64bf000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffea64e0000 - 0x00007ffea65d8000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffe9bcc0000 - 0x00007ffe9bf29000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17134.765_none_fb42a1a930655896\COMCTL32.dll
+0x00007ffea8830000 - 0x00007ffea8b52000 	C:\Windows\System32\combase.dll
+0x00007ffea6cf0000 - 0x00007ffea6d6a000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffea96d0000 - 0x00007ffea96fd000 	C:\Windows\System32\IMM32.DLL
+0x00000000731c0000 - 0x0000000073292000 	C:\Program Files\JetBrains\PhpStorm 2018.2.5\jre64\bin\msvcr100.dll
+0x00000000732a0000 - 0x0000000073ae6000 	C:\Program Files\JetBrains\PhpStorm 2018.2.5\jre64\bin\server\jvm.dll
+0x00007ffea9340000 - 0x00007ffea9348000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffe9c380000 - 0x00007ffe9c38a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffe9c480000 - 0x00007ffe9c4a3000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffe9c360000 - 0x00007ffe9c369000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffea9d50000 - 0x00007ffea9dbc000 	C:\Windows\System32\WS2_32.dll
+0x00007ffe9c450000 - 0x00007ffe9c47a000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffea7240000 - 0x00007ffea7289000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ffe9f050000 - 0x00007ffe9f05f000 	C:\Program Files\JetBrains\PhpStorm 2018.2.5\jre64\bin\verify.dll
+0x00007ffe91c70000 - 0x00007ffe91c99000 	C:\Program Files\JetBrains\PhpStorm 2018.2.5\jre64\bin\java.dll
+0x00007ffe90ae0000 - 0x00007ffe90af6000 	C:\Program Files\JetBrains\PhpStorm 2018.2.5\jre64\bin\zip.dll
+
+VM Arguments:
+java_command: org.jetbrains.git4idea.http.GitAskPassApp Username for 'http://gitlab.digiprojects.top:20443': 
+java_class_path (initial): C:/Program Files/JetBrains/PhpStorm 2018.2.5/plugins/git4idea/lib/git4idea-rt.jar;C:/Program Files/JetBrains/PhpStorm 2018.2.5/lib/xmlrpc-2.0.1.jar;C:/Program Files/JetBrains/PhpStorm 2018.2.5/lib/commons-codec-1.10.jar;C:/Program Files/JetBrains/PhpStorm 2018.2.5/lib/util.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Git/mingw64/libexec/git-core;C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\An Pham\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;H:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files (x86)\Yarn\bin\;C:\Users\An Pham\AppData\Local\Programs\Python\Python37;C:\Users\An Pham\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\An Pham\AppData\Local\Microsoft\WindowsApps;C:\Users\An Pham\AppData\Roaming\npm;C:\Users\An Pham\AppData\Local\GitHubDesktop\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\An Pham\AppData\Roaming\Composer\vendor\bin;C:\Program Files\JetBrains\WebStorm 2018.3.3\bin;;C:\Users\An Pham\AppData\Local\Yarn\bin;C:\Program Files\MongoDB\Server\4.0\bin\;
+USERNAME=An Pham
+DISPLAY=:0.0
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17134 (10.0.17134.753)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 142 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 12496804k(493224k free), swap 16691108k(5572k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.202-b44) for windows-amd64 JRE (1.8.0_202-release-1483-b44), built on Mar 29 2019 17:15:10 by "builduser" with MS VC++ 10.0 (VS2010)
+
+time: Mon Jun 10 18:16:25 2019
+timezone: SE Asia Standard Time
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

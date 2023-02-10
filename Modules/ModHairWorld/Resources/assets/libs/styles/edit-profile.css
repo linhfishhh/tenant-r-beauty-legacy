@@ -1,0 +1,238 @@
+.box-avatar .avatar
+{
+	position: relative;
+}
+.box-avatar .avatar img
+{
+	width: 100%;
+}
+.box-avatar .avatar .mask
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	height: 100%;
+}
+.box-avatar .avatar .remove
+{
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	z-index: 2;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background: #FF5C39;
+	color: white;
+	font-size: 10px;
+	/*+border-radius: 100%;*/
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-khtml-border-radius: 100%;
+	border-radius: 100%;
+	cursor: pointer;
+}
+.box-avatar .message
+{
+	font-size: 14px;
+	color: #808080;
+	margin-bottom: 15px;
+}
+#upload-avatar
+{
+	width: 100%;
+}
+.content-box form.loading
+{
+	/*+opacity: 0.5;*/
+	-filter: alpha(opacity=50);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	pointer-events: none;
+}
+#modal-account-address.loading form
+{
+	/*+opacity: 0.5;*/
+	-filter: alpha(opacity=50);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	pointer-events: none;
+}
+.content-box.loading
+{
+	/*+opacity: 0.5;*/
+	-filter: alpha(opacity=50);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	pointer-events: none;
+}
+#modal-cropper.loading .modal-content .modal-footer
+{
+	pointer-events: none;
+	/*+opacity: 0.4;*/
+	-filter: alpha(opacity=40);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+	-moz-opacity: 0.4;
+	opacity: 0.4;
+}
+.box-avatar .upload button
+{
+	width: 100%;
+	border: 1px solid #969696;
+	background: white;
+	height: 40px;
+	/*+border-radius: 3px;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.box-avatar .upload button:hover
+{
+	background: #FF5C39;
+	color: white;
+	border: 1px solid #FF5C39;
+}
+.box-info .field
+{
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+.box-info .field .lbl
+{
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.box-info .field .input input
+{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #E6E6E6;
+	padding: 0 15px;
+	/*+border-radius: 3px;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+.box-info .field .note
+{
+	font-size: 12px;
+	margin-top: 10px;
+	color: #808080;
+}
+.box-info .submit
+{
+	text-align: right;
+}
+.box-info .submit button
+{
+	height: 40px;
+	border: none;
+	background: #FF5C39;
+	color: white;
+	padding: 0 30px;
+	/*+border-radius: 3px;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.content-body
+{
+	padding-bottom: 30px;
+}
+#modal-account-change-phone .img-account-valid
+{
+	text-align: center;
+	margin-bottom: 15px;
+}
+#modal-account-change-phone .send
+{
+	margin-bottom: 15px;
+}
+#modal-account-change-phone .send a
+{
+	color: #FF5C39;
+}
+#modal-account-change-phone .check
+{
+	font-size: 14px;
+	margin-bottom: 15px;
+	color: #808080;
+}
+#modal-account-change-phone .field input
+{
+	/*+border-radius: 50px;*/
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-khtml-border-radius: 50px;
+	border-radius: 50px;
+}
+.box-address .address
+{
+	border-top: 1px solid #E6E6E6;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: relative;
+}
+.box-address .address:first-child
+{
+	padding-top: 0;
+	border: none;
+}
+.box-address .address .info
+{
+	width: calc(100% - 75px);
+}
+.box-address .add-address i
+{
+	color: #FF5C39;
+	margin-right: 10px;
+}
+.box-address .add-address
+{
+	color: #808080;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.box-address .add-address:hover
+{
+	color: #FF5C39;
+}
+.box-address .address .edit
+{
+	font-size: 14px;
+	position: absolute;
+	top: 15px;
+	right: 0;
+}
+.box-address .address .edit .remove
+{
+	color: #FF5C39;
+}
+.box-address .address .edit a
+{
+	margin: 0 5px;
+}
+.box-address .address:first-child .edit
+{
+	top: 0;
+}
+@media all and (max-width: 768px)
+{
+	.box-info .field .lbl
+	{
+		text-align: left;
+	}
+}
